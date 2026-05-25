@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>【無料動画】なぜ施術しても根本が変わらないのか | 片桐健治</title>
+  <meta name="description" content="整体・カイロプラクティック・治療院の施術家へ。体とチャクラの繋がりを30分で解説。無料動画をメールアドレス登録で受け取れます。" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Sans+JP:wght@400;500&family=Shippori+Mincho:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <style>
+    body { background: var(--deep, #0a1628); }
+
+    .gate-wrap {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+    }
+
+    .gate-label {
+      font-family: var(--font-en);
+      font-size: 0.75rem;
+      letter-spacing: 0.3em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      display: block;
+      text-align: center;
+    }
+
+    .gate-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      color: #fff;
+      line-height: 1.55;
+      text-align: center;
+      max-width: 620px;
+      margin: 0 auto 1rem;
+    }
+
+    .gate-title em { color: var(--gold); font-style: normal; }
+
+    .gate-sub {
+      font-size: 0.95rem;
+      color: #c8d2e1;
+      text-align: center;
+      line-height: 1.9;
+      max-width: 500px;
+      margin: 0 auto 2rem;
+    }
+
+    .gate-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .gate-badge {
+      background: rgba(201,168,76,0.12);
+      border: 1px solid rgba(201,168,76,0.4);
+      color: var(--gold);
+      font-size: 0.8rem;
+      padding: 0.35rem 0.9rem;
+      font-family: var(--font-serif);
+    }
+
+    .gate-card {
+      background: #fff;
+      max-width: 480px;
+      width: 100%;
+      padding: 2.5rem 2rem;
+      margin: 0 auto;
+    }
+
+    .gate-card h2 {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      color: #0a1628;
+      text-align: center;
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .gate-card p {
+      font-size: 0.85rem;
+      color: #7a8e9e;
+      text-align: center;
+      margin-bottom: 1.75rem;
+      line-height: 1.7;
+    }
+
+    /* UTAGEフォームの上書きスタイル */
+    .gate-card input[type="email"],
+    .gate-card input[type="text"] {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border: 1px solid #ccd8e8;
+      font-size: 1rem;
+      font-family: var(--font-sans);
+      margin-bottom: 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+      box-sizing: border-box;
+    }
+
+    .gate-card input:focus { border-color: var(--gold); }
+
+    .gate-card .btn-submit {
+      display: block;
+      width: 100%;
+      background: var(--gold);
+      color: #fff;
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      padding: 1rem;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .gate-card .btn-submit:hover { background: #b8963c; }
+
+    .gate-privacy {
+      font-size: 0.75rem;
+      color: #7a8e9e;
+      text-align: center;
+      margin-top: 1rem;
+      line-height: 1.7;
+    }
+
+    .gate-points {
+      max-width: 480px;
+      width: 100%;
+      margin: 2.5rem auto 0;
+    }
+
+    .gate-point {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .gate-point:last-child { border-bottom: none; }
+
+    .gate-point-num {
+      font-family: var(--font-en);
+      font-size: 1.5rem;
+      color: var(--gold);
+      opacity: 0.6;
+      line-height: 1;
+      flex-shrink: 0;
+      width: 2rem;
+      padding-top: 0.1rem;
+    }
+
+    .gate-point-body strong {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: 0.95rem;
+      color: #fff;
+      margin-bottom: 0.3rem;
+    }
+
+    .gate-point-body p {
+      font-size: 0.85rem;
+      color: #8a9ab0;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .gate-profile {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      max-width: 480px;
+      width: 100%;
+      margin: 2.5rem auto 0;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .gate-profile img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .gate-profile-text strong {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: 0.95rem;
+      color: #fff;
+      margin-bottom: 0.25rem;
+    }
+
+    .gate-profile-text span {
+      font-size: 0.8rem;
+      color: #8a9ab0;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gate-wrap">
+
+    <span class="gate-label">Free Webinar Video — Body Therapists</span>
+
+    <h1 class="gate-title">
+      なぜ施術しても、<br />
+      <em>クライアントの根本が<br />変わらないのか。</em>
+    </h1>
+
+    <p class="gate-sub">
+      体とチャクラの繋がりを、30分で解説します。<br />
+      施術家として毎日見ている症状が、<br />
+      まったく違う視点で見えてきます。
+    </p>
+
+    <div class="gate-badges">
+      <span class="gate-badge">約30分</span>
+      <span class="gate-badge">無料</span>
+      <span class="gate-badge">整体・カイロ・治療院の施術家向け</span>
+    </div>
+
+    <!-- ===== 登録ボタン ===== -->
+    <div class="gate-card">
+      <h2>メールアドレスを登録して<br />動画を無料で受け取る</h2>
+      <p>登録後すぐに動画視聴ページのURLをお送りします。<br />スマートフォンからでもご覧いただけます。</p>
+
+      <a
+        href="https://utage-system.com/p/dHyIBIwLDIIs"
+        class="btn-submit"
+        style="display:block; width:100%; padding:1rem; text-align:center; box-sizing:border-box; text-decoration:none;"
+      >動画を無料で受け取る →</a>
+
+      <p class="gate-privacy">
+        登録情報は厳重に管理し、第三者への提供はしません。<br />
+        不要な場合はいつでも配信停止できます。
+      </p>
+    </div>
+
+    <!-- ===== 動画で学べること ===== -->
+    <div class="gate-points">
+
+      <div class="gate-point">
+        <span class="gate-point-num">01</span>
+        <div class="gate-point-body">
+          <strong>「同じ場所に繰り返し症状が出る」本当の理由</strong>
+          <p>技術の問題ではありません。体と心の繋がりを、施術家の視点で解説します。</p>
+        </div>
+      </div>
+
+      <div class="gate-point">
+        <span class="gate-point-num">02</span>
+        <div class="gate-point-body">
+          <strong>体の部位とチャクラの対応関係</strong>
+          <p>肩・腰・胃腸・喉——それぞれがどのチャクラ（感情テーマ）と連動しているか、具体的にお伝えします。</p>
+        </div>
+      </div>
+
+      <div class="gate-point">
+        <span class="gate-point-num">03</span>
+        <div class="gate-point-body">
+          <strong>実際のクライアント事例 4ケース</strong>
+          <p>「うちにもいる」と感じるリアルな事例を通して、この視点が施術にどう活きるかを体感していただきます。</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===== プロフィール ===== -->
+    <div class="gate-profile">
+      <img src="../images/IMG_8584 2.jpg" alt="片桐健治" />
+      <div class="gate-profile-text">
+        <strong>片桐 健治</strong>
+        <span>GaiaArtsCreation 代表 / 認定ライフエネルギーコーチ<br />美容師歴35年以上・美容室経営 / キネシオロジー施術10年 / 海外人材育成4か国</span>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

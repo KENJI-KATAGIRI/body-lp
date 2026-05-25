@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>動画視聴ページ｜なぜ施術しても根本が変わらないのか | 片桐健治</title>
+  <!-- 検索エンジンにインデックスさせない（登録者限定ページ） -->
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Sans+JP:wght@400;500&family=Shippori+Mincho:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/style.css" />
+
+  <style>
+    .watch-hero {
+      background: var(--deep, #0a1628);
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+
+    .watch-hero .label {
+      font-family: var(--font-en);
+      font-size: 0.75rem;
+      letter-spacing: 0.3em;
+      color: var(--gold);
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .watch-hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.25rem, 3vw, 1.75rem);
+      color: #fff;
+      line-height: 1.55;
+      margin-bottom: 0.5rem;
+    }
+
+    .watch-hero p {
+      font-size: 0.9rem;
+      color: #8a9ab0;
+    }
+
+    .video-wrap {
+      background: #000;
+      padding: 0;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-container iframe,
+    .video-container video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+
+    /* YouTubeが未設定の場合のプレースホルダー */
+    .video-placeholder {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #555;
+      font-size: 0.9rem;
+      font-family: var(--font-sans);
+    }
+
+    .watch-chapters {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+    }
+
+    .watch-chapters h2 {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: var(--gold);
+      margin-bottom: 1.25rem;
+      letter-spacing: 0.05em;
+    }
+
+    .chapter-list {
+      list-style: none;
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .chapter-item {
+      display: flex;
+      gap: 1rem;
+      align-items: baseline;
+      font-size: 0.9rem;
+    }
+
+    .chapter-time {
+      font-family: var(--font-en);
+      font-size: 0.8rem;
+      color: var(--gold);
+      flex-shrink: 0;
+      width: 50px;
+    }
+
+    .chapter-title { color: #3a3230; line-height: 1.6; }
+
+    /* CTA */
+    .watch-cta {
+      background: var(--deep, #0a1628);
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+
+    .watch-cta .label {
+      font-family: var(--font-en);
+      font-size: 0.75rem;
+      letter-spacing: 0.3em;
+      color: var(--gold);
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .watch-cta h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.4rem, 3.5vw, 2rem);
+      color: #fff;
+      line-height: 1.55;
+      margin-bottom: 1.25rem;
+    }
+
+    .watch-cta h2 em { color: var(--gold); font-style: normal; }
+
+    .watch-cta p {
+      font-size: 0.95rem;
+      color: #c8d2e1;
+      line-height: 1.9;
+      max-width: 500px;
+      margin: 0 auto 2rem;
+    }
+
+    .watch-cta .detail-box {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-bottom: 2rem;
+    }
+
+    .detail-chip {
+      background: rgba(201,168,76,0.12);
+      border: 1px solid rgba(201,168,76,0.4);
+      color: var(--gold);
+      font-size: 0.8rem;
+      padding: 0.35rem 0.9rem;
+      font-family: var(--font-serif);
+    }
+
+    .watch-cta .note {
+      font-size: 0.8rem;
+      color: #5a6e84;
+      margin-top: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <div class="watch-hero">
+    <span class="label">Free Webinar Video</span>
+    <h1>なぜ施術しても、クライアントの根本が変わらないのか<br />——体とチャクラの繋がり</h1>
+    <p>片桐健治 / 約30分</p>
+  </div>
+
+  <!-- ===== 動画 ===== -->
+  <div class="video-wrap">
+    <div class="video-container">
+      <!--
+        YouTubeの場合：
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+
+        VPS直接ホストの場合：
+        <video controls playsinline>
+          <source src="/body/webinar/watch/webinar.mp4" type="video/mp4" />
+        </video>
+      -->
+      <div class="video-placeholder">
+        動画URLをここに設定してください（YouTube埋め込み or MP4直接配置）
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== チャプター ===== -->
+  <div class="watch-chapters">
+    <h2>目次</h2>
+    <ul class="chapter-list">
+      <li class="chapter-item">
+        <span class="chapter-time">0:00</span>
+        <span class="chapter-title">なぜ施術しても同じ状態で戻ってくるのか——問いかけ</span>
+      </li>
+      <li class="chapter-item">
+        <span class="chapter-time">3:00</span>
+        <span class="chapter-title">体とチャクラの繋がり——7つのチャクラと症状の対応関係</span>
+      </li>
+      <li class="chapter-item">
+        <span class="chapter-time">18:00</span>
+        <span class="chapter-title">実際のクライアント事例4ケース（肩・腰・胃腸・喉）</span>
+      </li>
+      <li class="chapter-item">
+        <span class="chapter-time">26:00</span>
+        <span class="chapter-title">この視点を施術に活かすために——次のステップ</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ===== CTA：ワークショップ案内 ===== -->
+  <section class="watch-cta" id="cta">
+    <span class="label">Next Step</span>
+    <h2>
+      「知っている」から、<br />
+      <em>「実感した」へ。</em>
+    </h2>
+    <p>
+      動画でお伝えしたことを、自分の体で感じてみてください。<br />
+      キネシオロジーの習得には時間がかかります。<br />
+      でも、効果を実感するのは——今日できます。
+    </p>
+    <div class="detail-box">
+      <span class="detail-chip">少人数制（3〜5名）</span>
+      <span class="detail-chip">3時間 / リアル開催（名古屋）</span>
+      <span class="detail-chip">参加費 ¥30,000</span>
+      <span class="detail-chip">年間プログラム申込時に全額充当</span>
+    </div>
+    <br />
+    <a href="https://life-energy-coaching.net/body/workshop/" class="btn-primary">施術革命ワークショップの詳細を見る →</a>
+    <p class="note">まず詳細を確認するだけでも構いません。押し売りはしません。</p>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <p style="margin-bottom: 0.5rem;">
+      <a href="http://life-energy-coaching.net" style="color: inherit; text-decoration: underline;">BLOOM Coach Academy for Body Therapists</a>
+      ｜ GaiaArtsCreation 代表 片桐健治
+    </p>
+    <p>&copy; 2025 GaiaArtsCreation. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
